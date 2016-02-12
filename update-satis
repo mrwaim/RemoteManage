@@ -1,0 +1,7 @@
+#!/bin/bash
+cd $1
+echo $PWD
+echo "git pull origin master"
+git pull origin master
+echo "./satis/bin/satis build config/satis.json public/ $2"
+./satis/bin/satis build config/satis.json public/ $2
